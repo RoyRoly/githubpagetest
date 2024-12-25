@@ -90,22 +90,21 @@
 
         /* Pastel dibujado con CSS */
         .cake {
-            margin-top: 10vh; /* Espacio suficiente desde el título */
             position: relative;
-            width: 40vw;
-            height: 30vw;
+            width: 30vw;  /* Reducido el tamaño */
+            height: 20vw; /* Reducido el tamaño */
             background-color: #FF69B4;
             border-radius: 10px 10px 0 0; /* Bordes redondeados arriba */
-            z-index: 1;
+            margin-top: 5vh; /* Espacio entre el pastel y el texto */
         }
 
         .cake:before {
             content: '';
             position: absolute;
-            top: -10vw;
+            top: -6vw;
             left: 5vw;
-            width: 30vw;
-            height: 10vw;
+            width: 20vw;
+            height: 6vw;
             background-color: #FFD700; /* Parte superior del pastel */
             border-radius: 10px;
         }
@@ -113,10 +112,10 @@
         .cake:after {
             content: '';
             position: absolute;
-            top: -15vw;
-            left: 10vw;
-            width: 20vw;
-            height: 5vw;
+            top: -10vw;
+            left: 8vw;
+            width: 14vw;
+            height: 4vw;
             background-color: #FF6347; /* Velas del pastel */
             border-radius: 50%;
         }
@@ -124,20 +123,20 @@
         /* Velas animadas */
         .candle {
             position: absolute;
-            width: 2vw;
-            height: 7vw;
+            width: 1.5vw;
+            height: 6vw;
             background-color: #FFD700;
-            top: -15vw;
-            left: 10vw;
+            top: -9vw;
+            left: 8vw;
             animation: flame 1.5s ease-in-out infinite;
         }
 
         .candle:nth-child(2) {
-            left: 15vw;
+            left: 13vw;
         }
 
         .candle:nth-child(3) {
-            left: 20vw;
+            left: 18vw;
         }
 
         @keyframes flame {
@@ -184,7 +183,8 @@
             }
             .cake {
                 width: 70vw;
-                height: 50vw;
+                height: 45vw;
+                margin-top: 5vh; /* Espacio adecuado entre el pastel y el texto */
             }
             .cake:before {
                 width: 50vw;
@@ -231,6 +231,6 @@
     </div>
 
     <!-- Botón para ver flores (enlace como botón) -->
-    <a href="https://royroly.github.io/flores/" class="button" target="_blank">¡ENTRA AQUI!</a>
+    <a href="https://royroly.github.io/flores/" class="button" target="_blank">¡Mira las flores!</a>
 </body>
 </html>
