@@ -91,20 +91,20 @@
         /* Pastel dibujado con CSS */
         .cake {
             position: relative;
-            width: 30vw;  /* Reducido el tamaño */
-            height: 20vw; /* Reducido el tamaño */
+            width: 20vw;  /* Reducido aún más el tamaño */
+            height: 15vw; /* Reducido aún más el tamaño */
             background-color: #FF69B4;
             border-radius: 10px 10px 0 0; /* Bordes redondeados arriba */
-            margin-top: 5vh; /* Espacio entre el pastel y el texto */
+            margin-top: 10vh; /* Espacio entre el pastel y el texto */
         }
 
         .cake:before {
             content: '';
             position: absolute;
-            top: -6vw;
+            top: -5vw;
             left: 5vw;
-            width: 20vw;
-            height: 6vw;
+            width: 15vw;
+            height: 5vw;
             background-color: #FFD700; /* Parte superior del pastel */
             border-radius: 10px;
         }
@@ -112,10 +112,10 @@
         .cake:after {
             content: '';
             position: absolute;
-            top: -10vw;
-            left: 8vw;
-            width: 14vw;
-            height: 4vw;
+            top: -8vw;
+            left: 7vw;
+            width: 10vw;
+            height: 3vw;
             background-color: #FF6347; /* Velas del pastel */
             border-radius: 50%;
         }
@@ -126,17 +126,17 @@
             width: 1.5vw;
             height: 6vw;
             background-color: #FFD700;
-            top: -9vw;
-            left: 8vw;
+            top: -7vw;
+            left: 7vw;
             animation: flame 1.5s ease-in-out infinite;
         }
 
         .candle:nth-child(2) {
-            left: 13vw;
+            left: 11vw;
         }
 
         .candle:nth-child(3) {
-            left: 18vw;
+            left: 15vw;
         }
 
         @keyframes flame {
@@ -182,55 +182,7 @@
                 font-size: 5vw;
             }
             .cake {
-                width: 70vw;
-                height: 45vw;
-                margin-top: 5vh; /* Espacio adecuado entre el pastel y el texto */
-            }
-            .cake:before {
-                width: 50vw;
-                height: 15vw;
-            }
-            .cake:after {
-                width: 30vw;
-                height: 10vw;
-            }
-            .candle {
-                width: 4vw;
-                height: 10vw;
-            }
-            .balloon {
-                width: 20vw;
-                height: 30vw;
-            }
-            .button {
-                font-size: 4vw;
-                padding: 10px 20px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <h1>¡Feliz Cumpleaños!</h1>
-    <h1>¡Feliz Cumpleaños Yanela Rossy!</h1>
-    <p>Que todos tus sueños se hagan realidad. ¡Disfruta mucho tu día!</p>
-
-    <!-- Globos animados -->
-    <div class="balloons">
-        <div class="balloon" style="left: 10%; animation-duration: 6s;"></div>
-        <div class="balloon" style="left: 30%; animation-duration: 7s;"></div>
-        <div class="balloon" style="left: 50%; animation-duration: 8s;"></div>
-        <div class="balloon" style="left: 70%; animation-duration: 9s;"></div>
-        <div class="balloon" style="left: 90%; animation-duration: 10s;"></div>
-    </div>
-
-    <!-- Pastel dibujado con CSS -->
-    <div class="cake">
-        <div class="candle"></div>
-        <div class="candle"></div>
-        <div class="candle"></div>
-    </div>
-
-    <!-- Botón para ver flores (enlace como botón) -->
-    <a href="https://royroly.github.io/flores/" class="button" target="_blank">¡Mira las flores!</a>
-</body>
-</html>
+                width: 60vw;  /* Aún más pequeño */
+                height: 40vw; /* Aún más pequeño */
+                margin-top: 10vh;
+           
