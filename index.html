@@ -3,48 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¡Feliz Cumpleaños!</title>
+    <title>¡Feliz Cumpleaños Yanela!</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f7e1a2;
-            color: #4a90e2;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #FFB6C1, #FFD700); /* Fondo cálido y alegre */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
             text-align: center;
-            padding: 50px;
+            overflow: hidden;
         }
+
         h1 {
-            font-size: 4em;
-            color: #ff69b4;
+            font-size: 3rem;
+            color: #fff;
+            text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.6);
+            margin-bottom: 20px;
+            font-family: 'Cursive', sans-serif;
         }
+
+        h1:nth-child(1) {
+            font-size: 4rem;
+            color: #FF69B4; /* Rosa brillante */
+        }
+
+        h1:nth-child(2) {
+            font-size: 3.5rem;
+            color: #FFD700; /* Dorado */
+        }
+
         p {
-            font-size: 1.5em;
+            font-size: 1.5rem;
+            margin-top: 20px;
+            color: #fff;
+            font-weight: bold;
+            text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
         }
+
         .balloons {
-            width: 100px;
-            height: 100px;
-            background-color: #ff4500;
-            border-radius: 50%;
-            display: inline-block;
-            margin: 10px;
-            position: relative;
-        }
-        .balloons::before {
-            content: '';
             position: absolute;
-            bottom: -20px;
-            width: 4px;
-            height: 40px;
-            background-color: #8b4513;
+            bottom: -100px;
+            z-index: -1;
+            pointer-events: none;
+            animation: floatBalloons 10s infinite;
+        }
+
+        .balloon {
+            position: absolute;
+            width: 80px;
+            height: 120px;
+            background-color: #FF69B4;
+            border-radius: 50%;
+            animation: bounce 4s ease-in-out infinite;
+        }
+
+        .balloon:nth-child(odd) {
+            background-color: #FFD700;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-40px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes floatBalloons {
+            0% {
+                transform: translateX(0) translateY(0);
+            }
+            100% {
+                transform: translateX(100vw) translateY(-200px);
+            }
+        }
+
+        .cake {
+            margin-top: 30px;
+            width: 150px;
+            height: 150px;
+            background: url('https://i.imgur.com/XgCHmkM.png') no-repeat center center;
+            background-size: contain;
+            animation: cakeAnimate 3s ease-in-out infinite;
+        }
+
+        @keyframes cakeAnimate {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
         }
     </style>
 </head>
 <body>
+    <h1>¡Feliz Cumpleaños!</h1>
     <h1>¡Feliz Cumpleaños Yanela Rossy!</h1>
     <p>Que todos tus sueños se hagan realidad. ¡Disfruta mucho tu día!</p>
-    
-    <div class="balloons"></div>
-    <div class="balloons"></div>
-    <div class="balloons"></div>
 
+    <div class="balloons">
+        <div class="balloon" style="left: 10%; animation-duration: 6s;"></div>
+        <div class="balloon" style="left: 30%; animation-duration: 7s;"></div>
+        <div class="balloon" style="left: 50%; animation-duration: 8s;"></div>
+        <div class="balloon" style="left: 70%; animation-duration: 9s;"></div>
+        <div class="balloon" style="left: 90%; animation-duration: 10s;"></div>
+    </div>
+
+    <div class="cake"></div>
 </body>
 </html>
